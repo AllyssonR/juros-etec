@@ -1,0 +1,96 @@
+:root {
+  --dark-green: #002626;
+  --midnight-green: #0e4749;
+  --yellow-green: #95c623;
+  --persimmon: #e55812;
+  --alabaster: #efe7da;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  overflow: hidden;
+}
+/* header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark-green);
+  padding: 1.95rem 0;
+  gap: 1rem;
+  border-bottom: 1px solid var(--yellow-green);
+}
+
+
+header h1 {
+  color: var(--yellow-green);
+  font-weight: bold;
+}
+header i {
+  font-size: 2rem;
+  color: var(--yellow-green);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 84vh;
+  background-color: var(--midnight-green);
+}
+main h1 {
+  color: var(--alabaster);
+}
+main form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main form section {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+}
+label {
+  color: var(--yellow-green);
+  margin-bottom: 0.1rem;
+}
+
+input {
+  background-color: var(--dark-green);
+  border: none;
+  padding: 0.75rem 0.5rem;
+  color:var(--alabaster);
+  border-radius: 4px;
+  outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+
+button {
+  border: none;
+  padding: 1rem 0;
+  background-color: var(--yellow-green);
+  color: var(--midnight-green);
+  border-radius: 8px;
+  font-size: 1.2rem;
+}
+
+footer {
+  border-top: 1px solid var(--yellow-green);
+  background-color: var(--dark-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+  color: var(--yellow-green);
+  gap: 1rem;
+}

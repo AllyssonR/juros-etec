@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Calculadora Investimento</title>
+  </head>
+  <body>
+    <header>
+      <i class="ph ph-hand-coins"></i>
+      <h1>InvestSmart</h1>
+    </header>
+    <main>
+      <h1>Calcule O Retorno do Investimento</h1>
+      <form>
+        <section>
+          <label for="nomeInvestidor">Nome Do investidor</label>
+          <input type="text" name="nomeInvestidor" id="nomeInvestidor" />
+        </section>
+        <section>
+          <label for="captitalInicial">Capital Inicial</label>
+          <input type="number" name="captitalInicial" id="captitalInicial" />
+        </section>
+        <section>
+          <label for="taxaDeJuros">Taxa De Juros(%) Mensal</label>
+          <input type="number" name="taxaDeJuros" id="taxaDeJuros" />
+        </section>
+        <section>
+          <label for="numeroDeMeses">Número de meses</label>
+          <input type="number" name="numeroDeMeses" id="numeroDeMeses" />
+        </section>
+        <button type="submit">Calcular o montante</button>
+      </form>
+    </main>
+    <footer>
+      <i class="ph ph-code"></i>
+      <p>Desenolvido por Allysson Urias Ribeiro</p>
+    </footer>
+  </body>
+</html>
