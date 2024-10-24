@@ -19,7 +19,7 @@ header {
   align-items: center;
   justify-content: center;
   background-color: var(--dark-green);
-  padding: 1.95rem 0;
+  padding: 1.5rem 0;
   gap: 1rem;
   border-bottom: 1px solid var(--yellow-green);
 }

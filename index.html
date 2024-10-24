@@ -20,22 +20,51 @@
     </header>
     <main>
       <h1>Calcule O Retorno do Investimento</h1>
-      <form>
+      <form id="form">
         <section>
           <label for="nomeInvestidor">Nome Do investidor</label>
-          <input type="text" name="nomeInvestidor" id="nomeInvestidor" />
+          <input
+            type="text"
+            name="nomeInvestidor"
+            id="nomeInvestidor"
+            placeholder="Nome do Investidor"
+            required
+          />
         </section>
         <section>
           <label for="captitalInicial">Capital Inicial</label>
-          <input type="number" name="captitalInicial" id="captitalInicial" />
+          <input
+            type="number"
+            name="captitalInicial"
+            id="captitalInicial"
+            placeholder="Capital Inicial"
+            min="0.01"
+            step="0.01"
+          />
         </section>
         <section>
           <label for="taxaDeJuros">Taxa De Juros(%) Mensal</label>
-          <input type="number" name="taxaDeJuros" id="taxaDeJuros" />
+          <input
+            type="number"
+            name="taxaDeJuros"
+            id="taxaDeJuros"
+            placeholder="taxa de juros em (%) Mensal"
+            min="0.01"
+            step="0.01"
+            required
+          />
         </section>
         <section>
           <label for="numeroDeMeses">Número de meses</label>
-          <input type="number" name="numeroDeMeses" id="numeroDeMeses" />
+          <input
+            type="number"
+            name="numeroDeMeses"
+            id="numeroDeMeses"
+            placeholder="Numero de meses"
+            min="1"
+            max="120"
+            step="1"
+          />
         </section>
         <button type="submit">Calcular o montante</button>
       </form>
@@ -44,5 +73,6 @@
       <i class="ph ph-code"></i>
       <p>Desenolvido por Allysson Urias Ribeiro</p>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
