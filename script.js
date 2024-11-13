@@ -7,11 +7,11 @@ form.addEventListener("submit", (event) => {
   const numeroDeMeses = document.getElementById("numeroDeMeses").value;
   const nomeInvestidor = document.getElementById("nomeInvestidor").value;
 
-  let juros = parseFloat(taxaDeJuros / 100);
-  let meses = parseInt(numeroDeMeses);
-  let capital = parseFloat(capitalInicial);
+  const juros = Number.parseFloat(taxaDeJuros / 100);
+  const meses = Number.parseInt(numeroDeMeses);
+  const capital = Number.parseFloat(capitalInicial);
 
-  let montante = capital * Math.pow(1 + juros, meses);
+  const montante = capital * (1 + juros) ** meses;
   alert(
     ` ola investidor ${nomeInvestidor} seu investimento de ${new Intl.NumberFormat(
       "pt-BR",
